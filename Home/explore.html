@@ -1,74 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <title>Connectify | Explore</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore • CONNECTIFY</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body id="explore-page">
-  <header class="navbar">
-    <h1 class="logo">🌟CONNECTIFY.</h1>
-    <nav class="nav-links">
-      <a href="index.html" class="nav-item"><u>Home</u></a>
-      <a href="explore.html" class="nav-item active"><u>Explore</u></a>
-      <a href="profile.html" class="nav-item"><u>Profile</u></a>
-      <a href="login.html" class="nav-item"><u>Login</u></a>
-      <a href="about.html" class="nav-item"><u>About</u></a>
-    </nav>
-  </header>
+<body>
+    <div class="navbar">
+        <h2>🌟CONNECTIFY</h2>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="explore.html">Explore</a>
+            <a href="profile.html">Profile</a>
+            <a href="about.html">About</a>
+            <a href="login.html">Login</a>
+        </div>
+    </div>
+    <section class="explore-section">
+        <h2 style="text-align:center; margin-top:20px; color: white;">Explore Interests</h2>
+        <p style="text-align:center; color:#555;">Discover posts, creators, and communities based on what you love.</p>
 
-  <main class="main-content">
-    <section id="explore-section">
-      <h2 class="section-title">Find Your Type 🧐</h2>
-      <div class="card-grid">
-        <div class="card" id="nature">
-        <a style="text-decoration: none; color: black;" href="/Underexplore/nature.html" target="_blank">Nature Love 🌏</a>
+        <div style="display:flex; flex-wrap:wrap; gap:15px; justify-content:center; margin-top:20px;">
+            <div class="explore-card" id="explore_card1"> <a href="https://www.google.com/search?sa=X&sca_esv=ef8c7200427aa2f5&sxsrf=AE3TifMQUe9tlKStiKLetU_DiVlxrczCDQ:1763368461177&udm=7&fbs=AIIjpHxU7SXXniUZfeShr2fp4giZ1Y6MJ25_tmWITc7uy4KIeoJTKjrFjVxydQWqI2NcOhZVmrJB8DQUK5IzxA2fZbQFrCfZ7DsBw9Vv9Qkv56j2ALXWrvj1T670Pk1a8WSFPlh_rz2XMCGQcnvHdWzmscxbDq0dOvoX9NWVzwgo5Z9W_akcBGEt4RUNTfWef40G5tpnVhNsAU2-B93YSO9GXcHMB1Nc-E5fNIAxvujePN_jVbxFfdg&q=photography&ved=2ahUKEwjp_fG14_iQAxXOSGwGHYisDXgQtKgLegQICxAB&biw=1512&bih=861&dpr=2" target="_blank"> Photography </a> </div>
+            <div class="explore-card" id="explore_card2"> <a href="https://www.google.com/search?q=art+and+design&sca_esv=ef8c7200427aa2f5&udm=7&biw=1512&bih=861&sxsrf=AE3TifPbTEoJDyTB_ivo_BPvo6h1JT4lsw%3A1763368466863&ei=Et4aady0NJHjseMPkcSfkQs&ved=0ahUKEwjchc244_iQAxWRcWwGHRHiJ7IQ4dUDCBE&uact=5&oq=art+and+design&gs_lp=EhZnd3Mtd2l6LW1vZGVsZXNzLXZpZGVvIg5hcnQgYW5kIGRlc2lnbjIFEAAYgAQyCxAAGIAEGIYDGIoFMgsQABiABBiGAxiKBTILEAAYgAQYhgMYigUyCBAAGIAEGKIEMggQABiABBiiBDIIEAAYogQYiQUyCBAAGIAEGKIESLrfBVDK1gRY7doFcAN4AZABAJgBxAGgAZYVqgEEMC4xN7gBA8gBAPgBAZgCFKACmxaoAgLCAgoQABiwAxjWBBhHwgIHECMYJxjqAsICCBAAGIAEGLEDwgILEAAYgAQYsQMYgwHCAg4QABiABBixAxiDARiKBcICChAAGIAEGEMYigXCAg0QABiABBixAxhDGIoFwgILEAAYgAQYsQMYigXCAgsQABiABBiRAhiKBcICDhAAGIAEGJECGLEDGIoFwgIKEAAYgAQYAhjLAcICBRAAGO8FmAMDiAYBkAYIkgcGMy4xNi4xoAeZXbIHBjAuMTYuMbgHiRbCBwowLjEuMTguMC4xyAdj&sclient=gws-wiz-modeless-video" target="_blank"> Art & Design </a> </div>
+            <div class="explore-card" id="explore_card3"> <a href="https://www.google.com/search?q=Travel&sca_esv=ef8c7200427aa2f5&udm=7&biw=1512&bih=861&sxsrf=AE3TifPqYk0OrkAhHjwcAd-i5nJZ7TMk-g%3A1763368568934&ei=eN4aaZLbOOXhseMPrreCyAM&ved=0ahUKEwiS96Lp4_iQAxXlcGwGHa6bADkQ4dUDCBE&uact=5&oq=Travel&gs_lp=EhZnd3Mtd2l6LW1vZGVsZXNzLXZpZGVvIgZUcmF2ZWwyCxAAGIAEGJECGIoFMggQABiABBixAzIIEAAYgAQYsQMyCBAAGIAEGLEDMgUQABiABDIFEAAYgAQyCxAAGIAEGLEDGIoFMg4QABiABBixAxiDARiKBTILEAAYgAQYsQMYigUyDhAAGIAEGLEDGIMBGIoFSKJWUMcjWMFAcAJ4AZABAJgB8AWgAYwYqgELMi0yLjAuMS4xLjK4AQPIAQD4AQGYAgigArMYqAIDwgIKEAAYsAMY1gQYR8ICBxAjGCcY6gLCAgoQABiABBhDGIoFwgINEAAYgAQYsQMYQxiKBcICCxAAGIAEGLEDGIMBmAMEiAYBkAYIkgcLMi4wLjIuMC4xLjOgB6MgsgcJMi0yLjAuMS4zuAepGMIHBTAuMi42yAcc&sclient=gws-wiz-modeless-video" target="_blank"> Travel </a> </div>
+            <div class="explore-card" id="explore_card4"> <a href="https://www.google.com/search?q=food+and+cooking&sca_esv=ef8c7200427aa2f5&udm=7&biw=1512&bih=861&sxsrf=AE3TifNMRFL4wxZT-KlzEAAgSPrE53Ddnw%3A1763368615828&ei=p94aaaGmMoK0wcsP3P7T4Ak&oq=Food+and+cooki&gs_lp=EhZnd3Mtd2l6LW1vZGVsZXNzLXZpZGVvIg5Gb29kIGFuZCBjb29raSoCCAAyCxAAGIAEGJECGIoFMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAESLlvUL8FWN1lcAJ4AZABAJgB-gGgAcYTqgEGMC4xMi4yuAEByAEA-AEBmAIQoAKdFKgCBMICChAAGLADGNYEGEfCAgcQIxgnGOoCwgIQEAAYgAQYsQMYQxiDARiKBcICCxAAGIAEGLEDGIMBwgIKEAAYgAQYQxiKBcICCBAAGIAEGLEDwgIOEAAYgAQYsQMYgwEYigXCAgsQABiABBixAxiKBcICDRAAGIAEGLEDGEMYigXCAgoQABiABBgUGIcCwgILEAAYgAQYhgMYigXCAgoQABiABBgCGMsBwgIIEAAYgAQYogTCAgUQABjvBZgDBIgGAZAGCJIHBjIuMTEuM6AHyE6yBwYwLjExLjO4B5QUwgcGMC4xLjE1yAc-&sclient=gws-wiz-modeless-video" target="_blank"> Food & Cooking </a> </div>
+            <div class="explore-card" id="explore_card5"> <a href="https://www.google.com/search?q=fitness+and+health+&sca_esv=ef8c7200427aa2f5&udm=7&biw=1512&bih=861&sxsrf=AE3TifPAL0UpVtV5IxlWuGSR3zjGzruN0w%3A1763368666289&ei=2t4aaeSpEZueseMP_qKXwAQ&ved=0ahUKEwjk_tiX5PiQAxUbT2wGHX7RBUgQ4dUDCBE&uact=5&oq=fitness+and+health+&gs_lp=EhZnd3Mtd2l6LW1vZGVsZXNzLXZpZGVvIhNmaXRuZXNzIGFuZCBoZWFsdGggMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABEjXjQFQgBRY8IgBcAJ4AZABAJgBywGgAcoXqgEGMC4xNy4xuAEDyAEA-AEBmAISoALPFagCBcICChAAGLADGNYEGEfCAgcQIxgnGOoCwgIEECMYJ8ICChAAGIAEGEMYigXCAgsQABiABBixAxiDAcICCBAAGIAEGLEDwgIOEAAYgAQYsQMYgwEYigXCAgsQABiABBiRAhiKBcICDhAAGIAEGJECGLEDGIoFwgINEAAYgAQYsQMYQxiKBcICBxAAGIAEGArCAggQABiABBiiBMICBRAAGO8FwgIEEAAYHsICBhAAGAoYHsICBhAAGAUYHsICBxAAGIAEGA3CAgYQABgNGB7CAggQABgKGA0YHsICBhAAGBYYHpgDBIgGAZAGCJIHBjIuMTQuMqAHrmyyBwYwLjE0LjK4B8YVwgcGMC4xLjE3yAc-&sclient=gws-wiz-modeless-video" target="_blank"> Fitness & Wellness </a> </div>
+            <div class="explore-card" id="explore_card6"> <a href="https://www.google.com/search?q=music&sca_esv=ef8c7200427aa2f5&udm=7&biw=1512&bih=861&sxsrf=AE3TifNvQJaf6wCo6KB9Py-pC1BMMPVlFQ%3A1763368736578&ei=IN8aaY_7ItyjnesP7PXi4A8&ved=0ahUKEwiPi5u55PiQAxXcUWcHHey6GPwQ4dUDCBE&uact=5&oq=music&gs_lp=EhZnd3Mtd2l6LW1vZGVsZXNzLXZpZGVvIgVtdXNpYzILEAAYgAQYkQIYigUyCxAAGIAEGJECGIoFMg0QABiABBixAxhDGIoFMgoQABiABBhDGIoFMgoQABiABBhDGIoFMgoQABiABBhDGIoFMg0QABiABBixAxhDGIoFMgoQABiABBhDGIoFMgoQABiABBhDGIoFMggQABiABBixA0iAIlCtBVjTHnACeAGQAQCYAZICoAHxB6oBBTAuMy4yuAEDyAEA-AEBmAIHoAKVCKgCBsICChAAGLADGNYEGEfCAgcQIxgnGOoCwgIFEAAYgATCAgsQABiABBixAxiDAcICDhAAGIAEGLEDGIMBGIoFmAMEiAYBkAYGkgcFMi4zLjKgB7EcsgcFMC4zLjK4B4oIwgcFMC4xLjbIBxk&sclient=gws-wiz-modeless-video" target="_blank"> Music </a> </div>
         </div>
-        <div class="card" id="travel">
-        <a style="text-decoration: none; color: black" href="/Underexplore/travel.html" target="_blank">Travel Diaries ✈️</a>
-        </div>
-        <div class="card" id="food">
-        <a style="text-decoration: none; color: white;" href="/Underexplore/food.html" target="_blank">Foodie Fun 🍔</a>
-        </div>
-        <div class="card" id="fitness">
-        <a style="text-decoration: none; color: white;" href="/Underexplore/fitness.html" target="_blank">Fitness Goals 🏋️‍♂️</a>
-        </div>
-        <div class="card" id="art">
-        <a style="text-decoration: none; color: white;" href="/Underexplore/art.html" target="_blank">Art & Design 🎨</a>
-        </div>
-        <div class="card" id="music">
-        <a style="text-decoration: none; color: white;" href="/Underexplore/music.html" target="_blank">Music Vibes 🎵</a>
-        </div>
-        <div class="card" id="book">
-        <a style="text-decoration: none; color: black;" href="/Underexplore/book.html" target="_blank">Book Lovers 📚</a>
-        </div>
-        <div class="card" id="photography">
-        <a style="text-decoration: none; color: white;" href="/Underexplore/photography.html" target="_blank">Photography 📸</a>
-        </div>
-        <div class="card" id="gaming">
-        <a style="text-decoration: none; color: white;" href="/Underexplore/gaming.html" target="_blank">Gaming Zone 🎮</a>
-        </div>
-        <div class="card" id="movie">
-        <a style="text-decoration: none; color: white;" href="/Underexplore/movie.html" target="_blank"></a>Movie Buffs 🎬</a>
-        </div>
-        <div class="card" id="tech">
-        <a style="text-decoration: none; color: white;" href="/Underexplore/tech.html" target="_blank"></a>Tech Trends 📱</a>
-        </div>
-        <div class="card" id="comedy">
-        <a style="text-decoration: none; color: black;" href="/Underexplore/comedy.html" target="_blank"></a>Comedy Central 😂</a>
-        </div>
-        <div class="card" id="fashion">
-        <a style="text-decoration: none; color: white;" href="/Underexplore/fashion.html" target="_blank"></a>Fashion Forward 👗</a>
-        </div>
-      </div>
     </section>
-  </main>
 
-  <footer class="footer">
-    <p style="color: white;">The place to connect with like-minded individuals.</p><br>
-    <p style="color: white;">© 2025 Connectify | All Rights Reserved</p>
-  </footer>
+    <footer>
+        © 2025 CONNECTIFY • Created for the community.
+        <br>
+        <pre>Terms   Privacy    Security    Status  Community Docs Contact  Manage cookies</pre>
+        
+        ALL RIGHTS RESERVED.        
+    </footer>
+
 </body>
 </html>
