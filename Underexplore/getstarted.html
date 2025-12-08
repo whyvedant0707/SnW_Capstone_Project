@@ -2,30 +2,83 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta-name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Get started</title>
 </head>
 <body style="background-color: black; color: white;">
-    <header class="navbar">
-    <h1 class="logo">🌟CONNECTIFY.</h1>
-    <nav class="nav_links">
-    </header>
-      <main>
-    <section>
-      <h2><u>Login or Sign Up 🔑</u></h2>
-      <form>
-        <input type="text" placeholder="Username" class="form_input" required>
-        <br><br>
-        <input type="password" placeholder="Password" class="form_input" required>
-        <br><br>
-        <button type="submit" class="btn_primary">Login</button>
-      </form>
-    </section>
-  </main>
 
-  <footer>
-    <p style="color: white;">The place to connect with like-minded individuals.</p><br>
-    <p style="color: white;">© 2025 Connectify | All Rights Reserved</p>
-  </footer>
+    <header class="navbar">
+        <h1 class="logo">🌟CONNECTIFY.</h1>
+        <nav class="nav_links"></nav>
+    </header>
+
+    <main>
+        <section>
+            <h2><u>Sign Up 🔑</u></h2>
+
+            <form id="signupForm">
+                <input type="text" placeholder="Username" class="form_input" id="userName" required>
+                <br><br>
+
+                <input type="password" placeholder="Password" class="form_input" id="passWord" required>
+                <br><br>
+
+                <button type="submit" class="btn_primary">Login</button>
+            </form>
+
+            <!-- Simple message area -->
+            <p id="msg" style="margin-top:15px; color:lightgreen;"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p style="color: white;">The place to connect with like-minded individuals.</p><br>
+        <p style="color: white;">© 2025 Connectify | All Rights Reserved</p>
+    </footer>
+
+
+<!-- SIMPLE BEGINNER-LEVEL JS -->
+<script>
+    console.log("Signup page loaded");
+
+    var form = document.getElementById("signupForm");
+    var msgBox = document.getElementById("msg");
+
+    // Using object (beginner style)
+    var userDetails = {
+        username: "",
+        password: ""
+    };
+
+    // Using function
+    function showMessage(text) {
+        msgBox.innerText = text;
+    }
+
+    // Event Handling
+    form.addEventListener("submit", function(e) {
+        e.preventDefault();
+
+        var nameVal = document.getElementById("userName").value;
+        var passVal = document.getElementById("passWord").value;
+
+        // storing values in object
+        userDetails.username = nameVal;
+        userDetails.password = passVal;
+
+        console.log("User trying to login:", userDetails);
+
+        // Basic beginner validation
+        if (nameVal === "" || passVal === "") {
+            alert("Please fill all fields");
+        } else if (passVal.length < 6) {
+            alert("Password must be at least 6 characters");
+        } else {
+            showMessage("✔ Logged in successfully as " + nameVal + "!");
+            alert("Welcome " + nameVal);
+        }
+    });
+</script>
+
 </body>
 </html>
