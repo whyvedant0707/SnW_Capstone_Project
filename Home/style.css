@@ -30,17 +30,17 @@ p {
   color: black;
   line-height: 1.6;
 }
-#about-section {
+#about_section {
   text-align: center;
   margin-top: 40px;
 }
 
-#about-section h2 {
+#about_section h2 {
   color: white;
   margin-bottom: 16px;
 }
 
-#about-section .section-text {
+#about_section .section_text {
   color: white;
   line-height: 1.6;
 }
@@ -67,31 +67,32 @@ p {
   letter-spacing: 1px;
 }
 
-.nav-links {
+.nav_links {
   display: flex;
   gap: 25px;
 }
 
-.nav-item {
+.nav_item {
   color: white;
   text-decoration: none;
   font-weight: 500;
 }
 
-.nav-item:hover,
-.nav-item.active {
+.nav_item:hover,
+.nav_item.active {
   color: white;
   transform: translateY(-5px);
+  transition: 0.3s ease;
 }
 
 /*MAIN CONTENT*/
-.main-content {
+.main_content {
   flex: 1;
   text-align: center;
   padding: 60px 20px;
 }
 
-.section-title {
+.section_title {
   font-size: 36px;
   color: rgb(143, 234, 243);
   letter-spacing: 0.5px;
@@ -99,14 +100,14 @@ p {
 }
 
 
-.section-text {
+.section_text {
   font-size: 18px;
   color: white;
   max-width: 700px;
   margin: 0 auto 20px auto;
 }
 
-.btn-primary {
+.btn_primary {
   background: linear-gradient(90deg, rgb(0, 216, 250), rgb(12, 157, 170), rgb(1, 46, 49));
   color: white;
   border: none;
@@ -116,13 +117,13 @@ p {
   font-size: 16px;
 }
 
-.btn-primary:hover {
+.btn_primary:hover {
   transform: scale(1.05);
 }
 
 
-/*CARDS (Explore)*/
-.card-grid {
+/*CARDS(Explore)*/
+.card_grid {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -210,10 +211,11 @@ color: black;
 
 .card:hover {
   transform: translateY(-5px);
+  transition: 0.3s ease;
 }
 
 /*PROFILE*/
-.profile-card {
+.profile_card {
   background: white;
   border: 1px solid lightgrey;
   padding: 30px;
@@ -222,7 +224,7 @@ color: black;
   border-radius: 15px;
 }
 
-.profile-pic {
+.profile_pic {
   width: 120px;
   height: 120px;
   border-radius: 50%;
@@ -240,7 +242,7 @@ color: black;
 }
 
 /*LOGIN FORM*/
-.auth-form {
+.auth_form {
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -252,7 +254,7 @@ color: black;
   border-radius: 12px;
 }
 
-.form-input {
+.form_input {
   padding: 12px;
   border: 1px solid black;
   border-radius: 8px;
@@ -260,13 +262,13 @@ color: black;
   outline: none;
 }
 
-.signup-text a {
+.signup_text a {
   color: blue;
   text-decoration: none;
 }
 
 /*ABOUT*/
-.contact-card {
+.contact_card {
   background: white;
   border: 1px solid lightgrey;
   padding: 20px;
@@ -274,7 +276,7 @@ color: black;
   max-width: 400px;
   margin: 20px auto;
 }
-.contact-card:hover {
+.contact_card:hover {
   transform: scale(1.02);
 }
 
@@ -287,19 +289,25 @@ color: black;
   font-size: 15px;
 }
 
-img, .card, .profile-card, .auth-form {
+img, .card, .profile_card, .auth_form {
   border-radius: 12px;
 }
 
 
-/*RESPONSIVE*/
+/*FOR_RESPONSIVE_PAGE*/
 @media (max-width: 768px) {
-  .nav-links {
+  .nav_links {
     flex-wrap: wrap;
     justify-content: center;
   }
-  .card-grid {
+  .card_grid {
     flex-direction: column;
     align-items: center;
+  }
+  @media (min-width: 1200px) {
+  .main-content {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
   }
 }
